@@ -2,8 +2,8 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class Telefon implements Serializable {
-    private String marka;  // Pole 1: marka telefonu
-    private double ekran;  // Pole 2: rozmiar ekranu w calach
+    private String marka;
+    private double ekran;
 
     public Telefon(String marka, double ekran) {
         this.marka = marka;
@@ -28,4 +28,5 @@ public class Telefon implements Serializable {
     public int hashCode() {
         return Objects.hash(marka, ekran);
     }
+
 }
